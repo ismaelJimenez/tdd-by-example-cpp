@@ -1,17 +1,15 @@
-#include <cstdint>
-
 class Dollar
 {
 public:
-  Dollar(std::uint32_t amount) : amount{amount} {}
+  Dollar(unsigned int amount) : amount{amount} {}
 
-  Dollar times(std::uint32_t multiplier)
+  Dollar times(unsigned int multiplier)
   {
     amount *= multiplier;
     return *this;
   }
 
-  std::uint32_t amount;
+  unsigned int amount;
 };
 
 #include <gtest/gtest.h>

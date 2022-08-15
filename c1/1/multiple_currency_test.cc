@@ -1,11 +1,9 @@
-#include <cstdint>
-
 class Dollar
 {
 public:
-  Dollar(std::uint32_t amount) {}
-  void times(std::uint32_t times) {}
-  std::uint32_t amount{10};
+  Dollar(unsigned int amount) {}
+  void times(unsigned int times) {}
+  unsigned int amount{10};
 };
 
 #include <gtest/gtest.h>
