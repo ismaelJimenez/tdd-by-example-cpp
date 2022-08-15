@@ -1,3 +1,0 @@
-You can build and run your test:
-
-my_workspace$ bazelisk test --test_output=all //c1/1:multiple_currency_test
