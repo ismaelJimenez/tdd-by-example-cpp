@@ -5,7 +5,7 @@ class Dollar
 public:
   Dollar(std::uint32_t amount) : amount{amount} {}
   void times(std::uint32_t multiplier) { amount *= multiplier; }
-  std::uint32_t amount{};
+  std::uint32_t amount;
 };
 
 #include <gtest/gtest.h>
