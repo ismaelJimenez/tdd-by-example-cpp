@@ -11,7 +11,7 @@ public:
 
 using ::testing::Eq;
 
-TEST(MultipleCurrencyTest, CanMultiplyAnAmountByANumber)
+TEST(MultipleCurrency, CanMultiplyAnAmountByANumber)
 {
   Dollar five{5};
 

@@ -1,21 +1,10 @@
-class Dollar
-{
-public:
-  Dollar(unsigned int amount) : amount{amount} {}
-
-  Dollar times(unsigned int multiplier)
-  {
-    amount *= multiplier;
-    return *this;
-  }
-
-  unsigned int amount;
-};
-
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
+#include "dollar.h"
+
 using ::testing::Eq;
+using ::testing::Ne;
 
 TEST(MultipleCurrency, CanMultiplyAnAmountByANumber)
 {
@@ -34,4 +23,9 @@ TEST(MultipleCurrency, CanMultiplyWithoutSideEffects)
   product = five.times(3);
 
   ASSERT_THAT(product.amount, Eq(15));
+}
+
+TEST(MultipleCurrency, CanBeCompared) {
+  ASSERT_TRUE(Dollar{5} == Dollar{5});
+  ASSERT_FALSE(Dollar{5} == Dollar{6});
 }

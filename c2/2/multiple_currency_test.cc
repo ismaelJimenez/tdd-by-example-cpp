@@ -16,7 +16,7 @@ public:
 
 using ::testing::Eq;
 
-TEST(MultipleCurrencyTest, CanMultiplyAnAmountByANumber)
+TEST(MultipleCurrency, CanMultiplyAnAmountByANumber)
 {
   Dollar five{5};
 
@@ -25,7 +25,7 @@ TEST(MultipleCurrencyTest, CanMultiplyAnAmountByANumber)
   ASSERT_THAT(product.amount, Eq(10));
 }
 
-TEST(MultipleCurrencyTest, CanMultiplyWithoutSideEffects)
+TEST(MultipleCurrency, CanMultiplyWithoutSideEffects)
 {
   Dollar five{5};
   auto product = five.times(2);
