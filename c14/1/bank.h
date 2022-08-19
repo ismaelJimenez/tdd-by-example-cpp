@@ -1,13 +1,15 @@
 #ifndef Bank_H
 #define Bank_H
 
+
+
+#include "money.h"
+#include "sum.h"
+
 #include <memory>
 #include <stdexcept>
 #include <string>
 #include <typeinfo>
-
-#include "money.h"
-#include "sum.h"
 
 class Bank {
  public:
