@@ -42,6 +42,4 @@ Checks: >
 
 HeaderFilterRegex: ".*"
 
-WarningsAsErrors: "*"
-
    
