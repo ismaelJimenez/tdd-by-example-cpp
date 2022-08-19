@@ -1,6 +1,6 @@
 cc_test(
   name = "multiple_currency_test",
   size = "small",
-  srcs = ["multiple_currency_test.cc"],
+  srcs = ["multiple_currency_test.cpp"],
   deps = ["@com_google_googletest//:gtest_main"],
 )

@@ -18,7 +18,7 @@ function check_cpplint() {
 
 function run_cpplint() {
   for target in "$@"; do
-    find ${target} -iname *.h -o -iname *.cc | xargs cpplint
+    find ${target} -iname *.h -o -iname *.cpp | xargs cpplint
   done
 }
 

@@ -18,7 +18,7 @@ function check_clang_format() {
 
 function run_clang_format() {
   for target in "$@"; do
-    find ${target} -iname *.h -o -iname *.cc | xargs clang-format -i
+    find ${target} -iname *.h -o -iname *.cpp | xargs clang-format -i
   done
 }
 

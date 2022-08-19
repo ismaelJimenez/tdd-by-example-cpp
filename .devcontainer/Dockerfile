@@ -23,4 +23,4 @@ RUN curl -fSsL -o /usr/local/bin/bazelisk https://github.com/bazelbuild/bazelisk
 
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends clang-format python3-pip && sudo pip3 install cpplint
+    && apt-get -y install --no-install-recommends clang-format clang-tidy python3-pip && sudo pip3 install cpplint
