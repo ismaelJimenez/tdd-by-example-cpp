@@ -6,8 +6,6 @@
 # Fail on error
 set -e
 
-CLANG_FORMAT_CMD="clang-format"
-
 function check_clang_format() {
   if [[ -z "$(command -v clang-format)" ]]; then
     error "Command \"clang-format\" not found."
@@ -17,11 +15,6 @@ function check_clang_format() {
     exit 1
   fi
 }
-
-function clang_format_run() {
-  ${CLANG_FORMAT_CMD} -i "$@"
-}
-
 
 function run_clang_format() {
   for target in "$@"; do
