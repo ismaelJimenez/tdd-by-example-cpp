@@ -1,12 +1,11 @@
-#include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 #include "dollar.h"
 
 using ::testing::Eq;
 
-TEST(MultipleCurrency, CanMultiplyAnAmountByANumber)
-{
+TEST(MultipleCurrency, CanMultiplyAnAmountByANumber) {
   Dollar five{5};
 
   auto product = five.times(2);
@@ -14,8 +13,7 @@ TEST(MultipleCurrency, CanMultiplyAnAmountByANumber)
   ASSERT_THAT(product.amount, Eq(10));
 }
 
-TEST(MultipleCurrency, CanMultiplyWithoutSideEffects)
-{
+TEST(MultipleCurrency, CanMultiplyWithoutSideEffects) {
   Dollar five{5};
   auto product = five.times(2);
 

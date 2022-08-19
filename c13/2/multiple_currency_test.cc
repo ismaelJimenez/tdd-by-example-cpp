@@ -1,5 +1,5 @@
-#include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 #include "bank.h"
 #include "money.h"
@@ -9,8 +9,7 @@ using ::testing::Eq;
 using ::testing::Ne;
 using ::testing::StrEq;
 
-TEST(MultipleCurrency, CanMultiplyMoneyByANumber)
-{
+TEST(MultipleCurrency, CanMultiplyMoneyByANumber) {
   Money five = Money::dollar(5);
 
   ASSERT_THAT(five.times(2), Eq(Money::dollar(10)));
@@ -34,7 +33,7 @@ TEST(MultipleCurrency, CanAddSameCurrency) {
   ASSERT_THAT(sum->addend, Eq(Money::dollar(5)));
 }
 
-TEST(MultipleCurrency, CanAddDifferentCurrencies) {  
+TEST(MultipleCurrency, CanAddDifferentCurrencies) {
   auto sum = Money::dollar(3) + Money::dollar(4);
   Bank bank{};
   Money reduced = bank.reduce(*sum, "USD");

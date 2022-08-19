@@ -6,13 +6,11 @@
 #include "money.h"
 #include "sum.h"
 
-class Bank
-{
-public:
-    Money reduce(Sum source, std::string to)
-    {
-        return {source.augend.amount + source.addend.amount, to};
-    }
+class Bank {
+ public:
+  Money reduce(Sum source, std::string to) {
+    return {source.augend.amount + source.addend.amount, to};
+  }
 };
 
 #endif

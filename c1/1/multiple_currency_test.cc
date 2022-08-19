@@ -1,18 +1,16 @@
-class Dollar
-{
-public:
+class Dollar {
+ public:
   Dollar(unsigned int amount) {}
   void times(unsigned int times) {}
   unsigned int amount{10};
 };
 
-#include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 using ::testing::Eq;
 
-TEST(MultipleCurrency, CanMultiplyAnAmountByANumber)
-{
+TEST(MultipleCurrency, CanMultiplyAnAmountByANumber) {
   Dollar five{5};
 
   five.times(2);

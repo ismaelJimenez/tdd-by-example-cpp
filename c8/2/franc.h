@@ -3,13 +3,11 @@
 
 #include "money.h"
 
-class Franc: public Money
-{
-public:
+class Franc : public Money {
+ public:
   Franc(unsigned int amount) : Money(amount) {}
 
-  Money* times(unsigned int multiplier)
-  {
+  Money* times(unsigned int multiplier) {
     return new Franc{amount * multiplier};
   }
 };

@@ -4,10 +4,10 @@
 class Money;
 class Bank;
 
-class Expression
-{
-public:
-    virtual std::unique_ptr<Money> reduce(const Bank& bank, const std::string &to) const = 0;
+class Expression {
+ public:
+  virtual std::unique_ptr<Money> reduce(const Bank& bank,
+                                        const std::string& to) const = 0;
 };
 
 #endif

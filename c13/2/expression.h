@@ -1,8 +1,6 @@
 #ifndef Expression_H
 #define Expression_H
 
-class Expression
-{
-};
+class Expression {};
 
 #endif

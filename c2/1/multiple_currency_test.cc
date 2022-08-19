@@ -1,10 +1,8 @@
-class Dollar
-{
-public:
+class Dollar {
+ public:
   Dollar(unsigned int amount) : amount{amount} {}
 
-  Dollar times(unsigned int multiplier)
-  {
+  Dollar times(unsigned int multiplier) {
     amount *= multiplier;
     return *this;
   }
@@ -12,13 +10,12 @@ public:
   unsigned int amount;
 };
 
-#include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 using ::testing::Eq;
 
-TEST(MultipleCurrency, CanMultiplyAnAmountByANumber)
-{
+TEST(MultipleCurrency, CanMultiplyAnAmountByANumber) {
   Dollar five{5};
 
   auto product = five.times(2);
@@ -26,8 +23,7 @@ TEST(MultipleCurrency, CanMultiplyAnAmountByANumber)
   ASSERT_THAT(product.amount, Eq(10));
 }
 
-TEST(MultipleCurrency, CanMultiplyWithoutSideEffects)
-{
+TEST(MultipleCurrency, CanMultiplyWithoutSideEffects) {
   Dollar five{5};
   auto product = five.times(2);
 

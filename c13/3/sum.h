@@ -4,15 +4,12 @@
 #include "expression.h"
 #include "money.h"
 
-class Sum : public Expression
-{
-public:
-  Sum(Money augend, Money addend) : augend{std::move(augend)}, addend{std::move(addend)}
-  {
-  }
+class Sum : public Expression {
+ public:
+  Sum(Money augend, Money addend)
+      : augend{std::move(augend)}, addend{std::move(addend)} {}
 
-  std::unique_ptr<Money> reduce(const std::string &to) const override
-  {
+  std::unique_ptr<Money> reduce(const std::string &to) const override {
     return std::make_unique<Money>(augend.amount + addend.amount, to);
   }
 

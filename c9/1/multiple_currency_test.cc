@@ -1,5 +1,5 @@
-#include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 #include "money.h"
 
@@ -7,8 +7,7 @@ using ::testing::Eq;
 using ::testing::Ne;
 using ::testing::StrEq;
 
-TEST(MultipleCurrency, CanMultiplyADollarByANumber)
-{
+TEST(MultipleCurrency, CanMultiplyADollarByANumber) {
   Money* five = Money::dollar(5);
 
   ASSERT_THAT(*five->times(2), Eq(*Money::dollar(10)));
@@ -23,8 +22,7 @@ TEST(MultipleCurrency, CanCompareCurrencies) {
   ASSERT_FALSE(Franc{5} == *Money::dollar(5));
 }
 
-TEST(MultipleCurrency, CanMultiplyAFrancByANumber)
-{
+TEST(MultipleCurrency, CanMultiplyAFrancByANumber) {
   Money* five = Money::franc(5);
 
   ASSERT_THAT(*five->times(2), Eq(*Money::franc(10)));

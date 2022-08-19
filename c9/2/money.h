@@ -1,19 +1,18 @@
 #ifndef Money_H
 #define Money_H
 
-#include <typeinfo>
 #include <string>
+#include <typeinfo>
 
 class Dollar;
 class Franc;
 
-class Money
-{
-public:
-  Money(unsigned int amount, std::string currency) : amount{amount}, currency_{currency} {}
+class Money {
+ public:
+  Money(unsigned int amount, std::string currency)
+      : amount{amount}, currency_{currency} {}
 
-  virtual bool operator==(const Money &rhs) const
-  {
+  virtual bool operator==(const Money &rhs) const {
     return (this->amount == rhs.amount) && (typeid(*this) == typeid(rhs));
   }
 
@@ -24,43 +23,33 @@ public:
 
   std::string currency() { return currency_; };
 
-protected:
+ protected:
   unsigned int amount;
 
-private:
-  const std::string currency_;    
+ private:
+  const std::string currency_;
 };
 
-class Dollar : public Money
-{
-public:
+class Dollar : public Money {
+ public:
   Dollar(unsigned int amount, std::string currency) : Money(amount, currency) {}
 
-  Money *times(unsigned int multiplier) override
-  {
+  Money *times(unsigned int multiplier) override {
     return Money::dollar(amount * multiplier);
   }
 };
 
-class Franc : public Money
-{
-public:
+class Franc : public Money {
+ public:
   Franc(unsigned int amount, std::string currency) : Money(amount, currency) {}
 
-  Money *times(unsigned int multiplier)
-  {
+  Money *times(unsigned int multiplier) {
     return Money::franc(amount * multiplier);
-  }   
+  }
 };
 
-Dollar *Money::dollar(unsigned int amount)
-{
-  return new Dollar{amount, "USD"};
-}
+Dollar *Money::dollar(unsigned int amount) { return new Dollar{amount, "USD"}; }
 
-Franc *Money::franc(unsigned int amount)
-{
-  return new Franc{amount, "CHF"};
-}
+Franc *Money::franc(unsigned int amount) { return new Franc{amount, "CHF"}; }
 
 #endif

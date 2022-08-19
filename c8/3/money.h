@@ -5,13 +5,11 @@
 
 class Dollar;
 
-class Money
-{
-public:
+class Money {
+ public:
   Money(unsigned int amount) : amount{amount} {}
 
-  virtual bool operator==(const Money &rhs) const
-  {
+  virtual bool operator==(const Money &rhs) const {
     return (this->amount == rhs.amount) && (typeid(*this) == typeid(rhs));
   }
 
@@ -19,24 +17,19 @@ public:
 
   static Dollar *dollar(unsigned int amount);
 
-protected:
+ protected:
   unsigned int amount;
 };
 
-class Dollar : public Money
-{
-public:
+class Dollar : public Money {
+ public:
   Dollar(unsigned int amount) : Money(amount) {}
 
-  Money *times(unsigned int multiplier) override
-  {
+  Money *times(unsigned int multiplier) override {
     return new Dollar{amount * multiplier};
   }
 };
 
-Dollar *Money::dollar(unsigned int amount)
-{
-  return new Dollar{amount};
-}
+Dollar *Money::dollar(unsigned int amount) { return new Dollar{amount}; }
 
 #endif

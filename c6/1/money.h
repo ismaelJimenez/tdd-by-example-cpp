@@ -2,10 +2,10 @@
 #define Money_H
 
 class Money {
-public:
-    Money(unsigned int amount) : amount{amount} {}
+ public:
+  Money(unsigned int amount) : amount{amount} {}
 
-protected:
+ protected:
   unsigned int amount;
 };
 

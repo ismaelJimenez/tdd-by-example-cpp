@@ -5,13 +5,9 @@
 
 #include "money.h"
 
-class Bank
-{
-public:
-    Money reduce(Money source, std::string to)
-    {
-        return Money::dollar(10);
-    }
+class Bank {
+ public:
+  Money reduce(Money source, std::string to) { return Money::dollar(10); }
 };
 
 #endif

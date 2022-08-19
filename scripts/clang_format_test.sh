@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Usage:
-#   clang-format.sh <path/to/src/dir/or/files>
+#   clang-format_test.sh <path/to/src/dir/or/files>
 
 # Fail on error
 set -e
@@ -25,7 +25,7 @@ function clang_format_run() {
 
 function run_clang_format() {
   for target in "$@"; do
-    find ${target} -iname *.h -o -iname *.cc | xargs clang-format -i
+    find ${target} -iname *.h -o -iname *.cc | xargs clang-format --dry-run --Werror
   done
 }
 
