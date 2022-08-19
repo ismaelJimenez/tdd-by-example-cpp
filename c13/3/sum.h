@@ -1,8 +1,16 @@
-#ifndef Sum_H
-#define Sum_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
 
-#include "expression.h"
-#include "money.h"
+#ifndef C13_3_SUM_H_
+#define C13_3_SUM_H_
+
+#include <memory>
+#include <string>
+#include <utility>
+
+#include "./expression.h"
+#include "./money.h"
 
 class Sum : public Expression {
  public:
@@ -17,4 +25,4 @@ class Sum : public Expression {
   Money addend;
 };
 
-#endif
+#endif  // C13_3_SUM_H_

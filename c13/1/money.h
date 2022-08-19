@@ -1,10 +1,14 @@
-#ifndef Money_H
-#define Money_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C13_1_MONEY_H_
+#define C13_1_MONEY_H_
 
 #include <memory>
 #include <string>
 
-#include "expression.h"
+#include "./expression.h"
 
 class Sum;
 
@@ -24,7 +28,7 @@ class Money : public Expression {
   static Money dollar(unsigned int amount);
   static Money franc(unsigned int amount);
 
-  std::string currency() { return currency_; };
+  std::string currency() { return currency_; }
 
  protected:
   unsigned int amount;
@@ -41,4 +45,4 @@ Money Money::dollar(unsigned int amount) { return Money{amount, "USD"}; }
 
 Money Money::franc(unsigned int amount) { return Money{amount, "CHF"}; }
 
-#endif
+#endif  // C13_1_MONEY_H_

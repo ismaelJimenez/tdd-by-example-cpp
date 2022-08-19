@@ -1,15 +1,19 @@
-#ifndef Dollar_H
-#define Dollar_h
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
 
-#include "money.h"
+#ifndef C8_1_DOLLAR_H_
+#define C8_1_DOLLAR_H_
+
+#include "./money.h"
 
 class Dollar : public Money {
  public:
-  Dollar(unsigned int amount) : Money(amount) {}
+  explicit Dollar(unsigned int amount) : Money(amount) {}
 
   Money* times(unsigned int multiplier) {
     return new Dollar{amount * multiplier};
   }
 };
 
-#endif
+#endif  // C8_1_DOLLAR_H_

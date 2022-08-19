@@ -1,9 +1,15 @@
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-#include "bank.h"
-#include "money.h"
-#include "sum.h"
+#include <utility>
+
+#include "./bank.h"
+#include "./money.h"
+#include "./sum.h"
 
 using ::testing::Eq;
 using ::testing::Ne;

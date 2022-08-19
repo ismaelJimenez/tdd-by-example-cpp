@@ -1,12 +1,16 @@
-#ifndef Money_H
-#define Money_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C6_1_MONEY_H_
+#define C6_1_MONEY_H_
 
 class Money {
  public:
-  Money(unsigned int amount) : amount{amount} {}
+  explicit Money(unsigned int amount) : amount{amount} {}
 
  protected:
   unsigned int amount;
 };
 
-#endif
+#endif  // C6_1_MONEY_H_

@@ -1,8 +1,12 @@
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-#include "franc.h"
-#include "money.h"
+#include "./money.h"
+#include "./franc.h"
 
 using ::testing::Eq;
 using ::testing::Ne;
@@ -19,7 +23,7 @@ TEST(MultipleCurrency, CanCompareCurrencies) {
   ASSERT_FALSE(*Money::dollar(5) == *Money::dollar(6));
   ASSERT_TRUE(Franc{5} == Franc{5});
   ASSERT_FALSE(Franc{5} == Franc{6});
-  ASSERT_FALSE(Franc{5} == *Money::dollar(5));
+  ASSERT_FALSE(Franc(5) == *Money::dollar(5));
 }
 
 TEST(MultipleCurrency, CanMultiplyAFrancByANumber) {

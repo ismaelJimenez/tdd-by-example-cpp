@@ -1,9 +1,13 @@
-#ifndef Dollar_H
-#define Dollar_h
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C3_1_DOLLAR_H_
+#define C3_1_DOLLAR_H_
 
 class Dollar {
  public:
-  Dollar(unsigned int amount) : amount{amount} {}
+  explicit Dollar(unsigned int amount) : amount{amount} {}
 
   Dollar times(unsigned int multiplier) { return {amount * multiplier}; }
 
@@ -12,4 +16,4 @@ class Dollar {
 
 constexpr bool operator==(const Dollar& lhs, const Dollar& rhs) { return true; }
 
-#endif
+#endif  // C3_1_DOLLAR_H_

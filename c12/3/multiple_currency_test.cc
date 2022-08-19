@@ -1,7 +1,11 @@
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-#include "money.h"
+#include "./money.h"
 
 using ::testing::Eq;
 using ::testing::Ne;

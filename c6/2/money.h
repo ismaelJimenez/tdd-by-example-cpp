@@ -1,9 +1,13 @@
-#ifndef Money_H
-#define Money_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C6_2_MONEY_H_
+#define C6_2_MONEY_H_
 
 class Money {
  public:
-  Money(unsigned int amount) : amount{amount} {}
+  explicit Money(unsigned int amount) : amount{amount} {}
 
  protected:
   unsigned int amount;
@@ -15,4 +19,4 @@ constexpr bool operator==(const Money &lhs, const Money &rhs) {
   return lhs.amount == rhs.amount;
 }
 
-#endif
+#endif  // C6_2_MONEY_H_

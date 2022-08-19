@@ -1,6 +1,10 @@
-#ifndef Expression_H
-#define Expression_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C13_1_EXPRESSION_H_
+#define C13_1_EXPRESSION_H_
 
 class Expression {};
 
-#endif
+#endif  // C13_1_EXPRESSION_H_

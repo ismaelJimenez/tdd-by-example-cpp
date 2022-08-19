@@ -1,9 +1,13 @@
-#ifndef Franc_H
-#define Franc_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C5_1_FRANC_H_
+#define C5_1_FRANC_H_
 
 class Franc {
  public:
-  Franc(unsigned int amount) : amount{amount} {}
+  explicit Franc(unsigned int amount) : amount{amount} {}
 
   Franc times(unsigned int multiplier) { return {amount * multiplier}; }
 
@@ -17,4 +21,4 @@ constexpr bool operator==(const Franc &lhs, const Franc &rhs) {
   return lhs.amount == rhs.amount;
 }
 
-#endif
+#endif  // C5_1_FRANC_H_

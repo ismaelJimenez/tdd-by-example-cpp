@@ -1,13 +1,17 @@
-#ifndef Bank_H
-#define Bank_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C13_3_BANK_H_
+#define C13_3_BANK_H_
 
 #include <memory>
 #include <stdexcept>
 #include <string>
 #include <typeinfo>
 
-#include "money.h"
-#include "sum.h"
+#include "./money.h"
+#include "./sum.h"
 
 class Bank {
  public:
@@ -16,4 +20,4 @@ class Bank {
   }
 };
 
-#endif
+#endif  // C13_3_BANK_H_

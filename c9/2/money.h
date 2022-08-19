@@ -1,5 +1,9 @@
-#ifndef Money_H
-#define Money_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C9_2_MONEY_H_
+#define C9_2_MONEY_H_
 
 #include <string>
 #include <typeinfo>
@@ -21,7 +25,7 @@ class Money {
   static Dollar *dollar(unsigned int amount);
   static Franc *franc(unsigned int amount);
 
-  std::string currency() { return currency_; };
+  std::string currency() { return currency_; }
 
  protected:
   unsigned int amount;
@@ -52,4 +56,4 @@ Dollar *Money::dollar(unsigned int amount) { return new Dollar{amount, "USD"}; }
 
 Franc *Money::franc(unsigned int amount) { return new Franc{amount, "CHF"}; }
 
-#endif
+#endif  // C9_2_MONEY_H_

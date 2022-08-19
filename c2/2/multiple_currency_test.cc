@@ -1,6 +1,10 @@
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
 class Dollar {
  public:
-  Dollar(unsigned int amount) : amount{amount} {}
+  explicit Dollar(unsigned int amount) : amount{amount} {}
 
   Dollar times(unsigned int multiplier) { return {amount * multiplier}; }
 

@@ -1,5 +1,9 @@
-#ifndef Money_H
-#define Money_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C8_3_MONEY_H_
+#define C8_3_MONEY_H_
 
 #include <typeinfo>
 
@@ -7,7 +11,7 @@ class Dollar;
 
 class Money {
  public:
-  Money(unsigned int amount) : amount{amount} {}
+  explicit Money(unsigned int amount) : amount{amount} {}
 
   virtual bool operator==(const Money &rhs) const {
     return (this->amount == rhs.amount) && (typeid(*this) == typeid(rhs));
@@ -23,7 +27,7 @@ class Money {
 
 class Dollar : public Money {
  public:
-  Dollar(unsigned int amount) : Money(amount) {}
+  explicit Dollar(unsigned int amount) : Money(amount) {}
 
   Money *times(unsigned int multiplier) override {
     return new Dollar{amount * multiplier};
@@ -32,4 +36,4 @@ class Dollar : public Money {
 
 Dollar *Money::dollar(unsigned int amount) { return new Dollar{amount}; }
 
-#endif
+#endif  // C8_3_MONEY_H_

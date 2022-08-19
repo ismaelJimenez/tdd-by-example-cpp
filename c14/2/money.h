@@ -1,10 +1,14 @@
-#ifndef Money_H
-#define Money_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C14_2_MONEY_H_
+#define C14_2_MONEY_H_
 
 #include <memory>
 #include <string>
 
-#include "expression.h"
+#include "./expression.h"
 
 class Sum;
 
@@ -24,7 +28,7 @@ class Money : public Expression {
   static Money dollar(unsigned int amount);
   static Money franc(unsigned int amount);
 
-  std::string currency() const { return currency_; };
+  std::string currency() const { return currency_; }
 
   std::unique_ptr<Money> reduce(const Bank &bank,
                                 const std::string &to) const override {
@@ -43,4 +47,4 @@ class Money : public Expression {
 
 std::ostream &operator<<(std::ostream &outs, const Money &money);
 
-#endif
+#endif  // C14_2_MONEY_H_

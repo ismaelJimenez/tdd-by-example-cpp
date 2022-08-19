@@ -1,7 +1,12 @@
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#include "c14/2/money.h"
+
 #include <iostream>
 
-#include "money.h"
-#include "sum.h"
+#include "./sum.h"
 
 std::unique_ptr<Sum> operator+(const Money &lhs, const Money &rhs) {
   return std::make_unique<Sum>(lhs, rhs);

@@ -1,13 +1,17 @@
-#ifndef Franc_H
-#define Franc_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
 
-#include "money.h"
+#ifndef C6_2_FRANC_H_
+#define C6_2_FRANC_H_
+
+#include "./money.h"
 
 class Franc : public Money {
  public:
-  Franc(unsigned int amount) : Money(amount) {}
+  explicit Franc(unsigned int amount) : Money(amount) {}
 
   Franc times(unsigned int multiplier) { return {amount * multiplier}; }
 };
 
-#endif
+#endif  // C6_2_FRANC_H_

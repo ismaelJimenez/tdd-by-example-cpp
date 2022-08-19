@@ -1,5 +1,12 @@
-#ifndef Expression_H
-#define Expression_H
+// Copyright 2022 Ismael Jimenez
+// Copyright 2003 Kent Beck
+// All rights reserved.
+
+#ifndef C14_1_EXPRESSION_H_
+#define C14_1_EXPRESSION_H_
+
+#include <memory>
+#include <string>
 
 class Money;
 class Bank;
@@ -10,4 +17,4 @@ class Expression {
                                         const std::string& to) const = 0;
 };
 
-#endif
+#endif  // C14_1_EXPRESSION_H_
