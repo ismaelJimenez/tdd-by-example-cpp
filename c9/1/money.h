@@ -5,8 +5,8 @@
 #ifndef C9_1_MONEY_H_
 #define C9_1_MONEY_H_
 
-#include <typeinfo>
 #include <string>
+#include <typeinfo>
 
 class Dollar;
 class Franc;

@@ -5,8 +5,8 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-#include "./money.h"
 #include "./franc.h"
+#include "./money.h"
 
 using ::testing::Eq;
 using ::testing::Ne;
