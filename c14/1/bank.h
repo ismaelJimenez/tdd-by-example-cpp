@@ -1,8 +1,6 @@
 #ifndef Bank_H
 #define Bank_H
 
-
-
 #include "money.h"
 #include "sum.h"
 
