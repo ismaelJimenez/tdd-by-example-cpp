@@ -3,29 +3,27 @@
 // All rights reserved.
 
 #include <gmock/gmock.h>
-#include <gtest/gtest.h>
 
-#include "./dollar.hpp"
-#include "./franc.hpp"
+#include "chapter-6/dollar.hpp"
+#include "chapter-6/franc.hpp"
 
 using ::testing::Eq;
-using ::testing::Ne;
 
-TEST(MultipleCurrency, CanMultiplyADollarByANumber) {
+TEST(MultiCurrency, Multiplication) {
   Dollar five{5};
 
   ASSERT_THAT(five.times(2), Eq(Dollar{10}));
   ASSERT_THAT(five.times(3), Eq(Dollar{15}));
 }
 
-TEST(MultipleCurrency, CanCompareCurrencies) {
+TEST(MultiCurrency, Equality) {
   ASSERT_TRUE(Dollar{5} == Dollar{5});
   ASSERT_FALSE(Dollar{5} == Dollar{6});
   ASSERT_TRUE(Franc{5} == Franc{5});
   ASSERT_FALSE(Franc{5} == Franc{6});
 }
 
-TEST(MultipleCurrency, CanMultiplyAFrancByANumber) {
+TEST(MultiCurrency, FrancMultiplication) {
   Franc five{5};
 
   ASSERT_THAT(five.times(2), Eq(Franc{10}));
