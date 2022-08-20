@@ -14,7 +14,7 @@ class Dollar {
     return *this;
   }
 
-  int amount{};
+  int amount;
 };
 
 #endif  // CHAPTER_1_DOLLAR_HPP_
