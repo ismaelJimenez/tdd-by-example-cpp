@@ -3,13 +3,12 @@ name: Simple CI
 on: [pull_request, push]
 
 jobs:
-  build-ubuntu:
+  tests-ubuntu:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: tests
-      run: bazel test --test_output=all //chapter-1:test
-      run: bazel test --test_output=all //chapter-2:test
+    - run: bazel test --test_output=all //chapter-1:test
+    - run: bazel test --test_output=all //chapter-2:test
 
   clang-format:
     runs-on: ubuntu-latest
