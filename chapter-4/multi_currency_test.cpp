@@ -4,18 +4,15 @@
 
 #include <gmock/gmock.h>
 
-#include "chapter-3/dollar.hpp"
+#include "chapter-4/dollar.hpp"
 
 using ::testing::Eq;
 
 TEST(MultiCurrency, Multiplication) {
   Dollar five{5};
 
-  auto product = five.times(2);
-  ASSERT_THAT(product.amount, Eq(10));
-
-  product = five.times(3);
-  ASSERT_THAT(product.amount, Eq(15));
+  ASSERT_THAT(five.times(2), Eq(Dollar{10}));
+  ASSERT_THAT(five.times(3), Eq(Dollar{15}));
 }
 
 TEST(MultiCurrency, Equality) {

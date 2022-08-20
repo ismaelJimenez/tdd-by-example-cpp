@@ -13,11 +13,11 @@ class Dollar {
     return Dollar{amount * multiplier};
   }
 
-  [[nodiscard]] bool equals(const Dollar& dollar) const {
-    return amount == dollar.amount;
-  }
-
   int amount;
 };
+
+constexpr bool operator==(const Dollar& lhs, const Dollar& rhs) {
+  return lhs.amount == rhs.amount;
+}
 
 #endif  // CHAPTER_3_DOLLAR_HPP_
