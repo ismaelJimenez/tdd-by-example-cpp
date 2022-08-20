@@ -25,7 +25,7 @@ function clang_format_run() {
 
 function run_clang_format() {
   for target in "$@"; do
-    find ${target} -iname *.h -o -iname *.cpp | xargs clang-format --dry-run --Werror
+    find ${target} -iname *.hpp -o -iname *.cpp | xargs clang-format --dry-run --Werror
   done
 }
 

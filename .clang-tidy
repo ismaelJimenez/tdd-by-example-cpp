@@ -2,10 +2,8 @@ UseColor: true
 
 Checks: >
     bugprone-*,
-    cert-*,
     cppcoreguidelines-*,
     google-*,
-    hicpp-*,
     misc-*,
     modernize-avoid-bind,
     modernize-avoid-c-arrays,
@@ -42,4 +40,4 @@ Checks: >
 
 HeaderFilterRegex: ".*"
 
-   
+
