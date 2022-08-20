@@ -9,7 +9,9 @@ class Dollar {
  public:
   explicit Dollar(int amount) : amount{amount} {}
 
-  [[nodiscard]] Dollar times(int multiplier) const { return Dollar{amount * multiplier}; }
+  [[nodiscard]] Dollar times(int multiplier) const {
+    return Dollar{amount * multiplier};
+  }
 
   int amount;
 };
