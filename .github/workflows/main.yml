@@ -12,6 +12,8 @@ jobs:
     - run: bazel test --test_output=all //chapter-3:test
     - run: bazel test --test_output=all //chapter-4:test
     - run: bazel test --test_output=all //chapter-5:test
+    - run: bazel test --test_output=all //chapter-6:test
+    - run: bazel test --test_output=all //chapter-7:test
 
   clang-format:
     runs-on: ubuntu-latest

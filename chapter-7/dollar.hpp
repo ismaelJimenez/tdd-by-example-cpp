@@ -2,10 +2,10 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef CHAPTER_6_DOLLAR_HPP_
-#define CHAPTER_6_DOLLAR_HPP_
+#ifndef CHAPTER_7_DOLLAR_HPP_
+#define CHAPTER_7_DOLLAR_HPP_
 
-#include "chapter-6/money.hpp"
+#include "chapter-7/money.hpp"
 
 class Dollar : public Money {
  public:
@@ -16,4 +16,4 @@ class Dollar : public Money {
   }
 };
 
-#endif  // CHAPTER_6_DOLLAR_HPP_
+#endif  // CHAPTER_7_DOLLAR_HPP_
