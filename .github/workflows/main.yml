@@ -22,7 +22,7 @@ jobs:
     - name: install dependencies
       run: sudo apt-get update && sudo apt-get install clang-format
     - name: check
-      run: bash scripts/clang_format_test.sh .
+      run: bash tools/scripts/clang_format_test.sh .
 
   cpplint:
     runs-on: ubuntu-latest
@@ -31,4 +31,4 @@ jobs:
     - name: install dependencies
       run: sudo apt-get update && sudo apt-get install python3-pip && sudo pip3 install cpplint
     - name: check
-      run: bash scripts/cpplint.sh .
+      run: bash tools/scripts/cpplint.sh .
