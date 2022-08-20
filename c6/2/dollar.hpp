@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C6_2_DOLLAR_H_
-#define C6_2_DOLLAR_H_
+#ifndef C6_2_DOLLAR_HPP_
+#define C6_2_DOLLAR_HPP_
 
 #include "./money.hpp"
 
@@ -14,4 +14,4 @@ class Dollar : public Money {
   Dollar times(unsigned int multiplier) { return Dollar{amount * multiplier}; }
 };
 
-#endif  // C6_2_DOLLAR_H_
+#endif  // C6_2_DOLLAR_HPP_

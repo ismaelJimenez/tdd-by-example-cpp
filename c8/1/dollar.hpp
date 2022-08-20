@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C8_1_DOLLAR_H_
-#define C8_1_DOLLAR_H_
+#ifndef C8_1_DOLLAR_HPP_
+#define C8_1_DOLLAR_HPP_
 
 #include "./money.hpp"
 
@@ -16,4 +16,4 @@ class Dollar : public Money {
   }
 };
 
-#endif  // C8_1_DOLLAR_H_
+#endif  // C8_1_DOLLAR_HPP_

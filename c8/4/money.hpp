@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C8_4_MONEY_H_
-#define C8_4_MONEY_H_
+#ifndef C8_4_MONEY_HPP_
+#define C8_4_MONEY_HPP_
 
 #include <typeinfo>
 
@@ -49,4 +49,4 @@ Dollar *Money::dollar(unsigned int amount) { return new Dollar{amount}; }
 
 Franc *Money::franc(unsigned int amount) { return new Franc{amount}; }
 
-#endif  // C8_4_MONEY_H_
+#endif  // C8_4_MONEY_HPP_

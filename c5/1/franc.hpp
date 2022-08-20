@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C5_1_FRANC_H_
-#define C5_1_FRANC_H_
+#ifndef C5_1_FRANC_HPP_
+#define C5_1_FRANC_HPP_
 
 class Franc {
  public:
@@ -21,4 +21,4 @@ constexpr bool operator==(const Franc &lhs, const Franc &rhs) {
   return lhs.amount == rhs.amount;
 }
 
-#endif  // C5_1_FRANC_H_
+#endif  // C5_1_FRANC_HPP_

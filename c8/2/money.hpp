@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C8_2_MONEY_H_
-#define C8_2_MONEY_H_
+#ifndef C8_2_MONEY_HPP_
+#define C8_2_MONEY_HPP_
 
 #include <typeinfo>
 
@@ -34,4 +34,4 @@ class Dollar : public Money {
 
 Dollar Money::dollar(unsigned int amount) { return Dollar{amount}; }
 
-#endif  // C8_2_MONEY_H_
+#endif  // C8_2_MONEY_HPP_

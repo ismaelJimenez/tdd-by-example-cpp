@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C3_1_DOLLAR_H_
-#define C3_1_DOLLAR_H_
+#ifndef C3_1_DOLLAR_HPP_
+#define C3_1_DOLLAR_HPP_
 
 class Dollar {
  public:
@@ -16,4 +16,4 @@ class Dollar {
 
 constexpr bool operator==(const Dollar& lhs, const Dollar& rhs) { return true; }
 
-#endif  // C3_1_DOLLAR_H_
+#endif  // C3_1_DOLLAR_HPP_

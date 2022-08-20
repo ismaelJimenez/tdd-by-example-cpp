@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C6_1_DOLLAR_H_
-#define C6_1_DOLLAR_H_
+#ifndef C6_1_DOLLAR_HPP_
+#define C6_1_DOLLAR_HPP_
 
 #include "./money.hpp"
 
@@ -21,4 +21,4 @@ constexpr bool operator==(const Dollar &lhs, const Dollar &rhs) {
   return lhs.amount == rhs.amount;
 }
 
-#endif  // C6_1_DOLLAR_H_
+#endif  // C6_1_DOLLAR_HPP_

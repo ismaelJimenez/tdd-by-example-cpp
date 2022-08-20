@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C6_1_MONEY_H_
-#define C6_1_MONEY_H_
+#ifndef C6_1_MONEY_HPP_
+#define C6_1_MONEY_HPP_
 
 class Money {
  public:
@@ -13,4 +13,4 @@ class Money {
   unsigned int amount;
 };
 
-#endif  // C6_1_MONEY_H_
+#endif  // C6_1_MONEY_HPP_

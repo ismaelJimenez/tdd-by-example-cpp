@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C8_2_FRANC_H_
-#define C8_2_FRANC_H_
+#ifndef C8_2_FRANC_HPP_
+#define C8_2_FRANC_HPP_
 
 #include "./money.hpp"
 
@@ -16,4 +16,4 @@ class Franc : public Money {
   }
 };
 
-#endif  // C8_2_FRANC_H_
+#endif  // C8_2_FRANC_HPP_

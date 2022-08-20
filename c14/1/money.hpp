@@ -2,11 +2,12 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C14_1_MONEY_H_
-#define C14_1_MONEY_H_
+#ifndef C14_1_MONEY_HPP_
+#define C14_1_MONEY_HPP_
 
 #include <memory>
 #include <string>
+#include <utility>
 
 #include "./expression.hpp"
 
@@ -56,4 +57,4 @@ std::ostream &operator<<(std::ostream &outs, const Money &money) {
   return outs << money.amount << " " << money.currency();
 }
 
-#endif  // C14_1_MONEY_H_
+#endif  // C14_1_MONEY_HPP_

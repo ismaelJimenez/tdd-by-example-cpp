@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C13_4_EXPRESSION_H_
-#define C13_4_EXPRESSION_H_
+#ifndef C13_4_EXPRESSION_HPP_
+#define C13_4_EXPRESSION_HPP_
 
 #include <memory>
 #include <string>
@@ -15,4 +15,4 @@ class Expression {
   virtual std::unique_ptr<Money> reduce(const std::string &to) const = 0;
 };
 
-#endif  // C13_4_EXPRESSION_H_
+#endif  // C13_4_EXPRESSION_HPP_

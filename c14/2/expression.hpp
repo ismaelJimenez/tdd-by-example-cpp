@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C14_2_EXPRESSION_H_
-#define C14_2_EXPRESSION_H_
+#ifndef C14_2_EXPRESSION_HPP_
+#define C14_2_EXPRESSION_HPP_
 
 #include <memory>
 #include <string>
@@ -17,4 +17,4 @@ class Expression {
                                         const std::string& to) const = 0;
 };
 
-#endif  // C14_2_EXPRESSION_H_
+#endif  // C14_2_EXPRESSION_HPP_

@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C13_2_BANK_H_
-#define C13_2_BANK_H_
+#ifndef C13_2_BANK_HPP_
+#define C13_2_BANK_HPP_
 
 #include <string>
 
@@ -17,4 +17,4 @@ class Bank {
   }
 };
 
-#endif  // C13_2_BANK_H_
+#endif  // C13_2_BANK_HPP_

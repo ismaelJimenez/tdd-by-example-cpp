@@ -2,11 +2,12 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C10_1_MONEY_H_
-#define C10_1_MONEY_H_
+#ifndef C10_1_MONEY_HPP_
+#define C10_1_MONEY_HPP_
 
 #include <string>
 #include <typeinfo>
+#include <utility>
 
 class Dollar;
 class Franc;
@@ -48,4 +49,4 @@ Dollar *Money::dollar(unsigned int amount) { return new Dollar{amount, "USD"}; }
 
 Franc *Money::franc(unsigned int amount) { return new Franc{amount, "CHF"}; }
 
-#endif  // C10_1_MONEY_H_
+#endif  // C10_1_MONEY_HPP_

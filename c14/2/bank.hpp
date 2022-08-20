@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C14_2_BANK_H_
-#define C14_2_BANK_H_
+#ifndef C14_2_BANK_HPP_
+#define C14_2_BANK_HPP_
 
 #include <memory>
 #include <stdexcept>
@@ -20,4 +20,4 @@ class Bank {
   }
 };
 
-#endif  // C14_2_BANK_H_
+#endif  // C14_2_BANK_HPP_

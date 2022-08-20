@@ -2,11 +2,12 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C12_4_MONEY_H_
-#define C12_4_MONEY_H_
+#ifndef C12_4_MONEY_HPP_
+#define C12_4_MONEY_HPP_
 
 #include <string>
 #include <typeinfo>
+#include <utility>
 
 class Dollar;
 class Franc;
@@ -15,7 +16,8 @@ class Expression {};
 
 class Money : public Expression {
  public:
-  Money(unsigned int amount, std::string currency) : amount{amount}, currency_{std::move(currency)} {}
+  Money(unsigned int amount, std::string currency)
+      : amount{amount}, currency_{std::move(currency)} {}
 
   virtual bool operator==(const Money &rhs) const {
     return (this->amount == rhs.amount) && (this->currency_ == rhs.currency_);
@@ -45,4 +47,4 @@ Money Money::dollar(unsigned int amount) { return Money{amount, "USD"}; }
 
 Money Money::franc(unsigned int amount) { return Money{amount, "CHF"}; }
 
-#endif  // C12_4_MONEY_H_
+#endif  // C12_4_MONEY_HPP_

@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C12_4_BANK_H_
-#define C12_4_BANK_H_
+#ifndef C12_4_BANK_HPP_
+#define C12_4_BANK_HPP_
 
 #include <string>
 
@@ -14,4 +14,4 @@ class Bank {
   Money reduce(Money source, std::string to) { return Money::dollar(10); }
 };
 
-#endif  // C12_4_BANK_H_
+#endif  // C12_4_BANK_HPP_

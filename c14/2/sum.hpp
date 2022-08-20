@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C14_2_SUM_H_
-#define C14_2_SUM_H_
+#ifndef C14_2_SUM_HPP_
+#define C14_2_SUM_HPP_
 
 #include <memory>
 #include <string>
@@ -26,4 +26,4 @@ class Sum : public Expression {
   Money addend;
 };
 
-#endif  // C14_2_SUM_H_
+#endif  // C14_2_SUM_HPP_

@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C6_2_MONEY_H_
-#define C6_2_MONEY_H_
+#ifndef C6_2_MONEY_HPP_
+#define C6_2_MONEY_HPP_
 
 class Money {
  public:
@@ -19,4 +19,4 @@ constexpr bool operator==(const Money &lhs, const Money &rhs) {
   return lhs.amount == rhs.amount;
 }
 
-#endif  // C6_2_MONEY_H_
+#endif  // C6_2_MONEY_HPP_

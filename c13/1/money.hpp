@@ -2,11 +2,12 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C13_1_MONEY_H_
-#define C13_1_MONEY_H_
+#ifndef C13_1_MONEY_HPP_
+#define C13_1_MONEY_HPP_
 
 #include <memory>
 #include <string>
+#include <utility>
 
 #include "./expression.hpp"
 
@@ -45,4 +46,4 @@ Money Money::dollar(unsigned int amount) { return Money{amount, "USD"}; }
 
 Money Money::franc(unsigned int amount) { return Money{amount, "CHF"}; }
 
-#endif  // C13_1_MONEY_H_
+#endif  // C13_1_MONEY_HPP_

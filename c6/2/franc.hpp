@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C6_2_FRANC_H_
-#define C6_2_FRANC_H_
+#ifndef C6_2_FRANC_HPP_
+#define C6_2_FRANC_HPP_
 
 #include "./money.hpp"
 
@@ -14,4 +14,4 @@ class Franc : public Money {
   Franc times(unsigned int multiplier) { return Franc{amount * multiplier}; }
 };
 
-#endif  // C6_2_FRANC_H_
+#endif  // C6_2_FRANC_HPP_

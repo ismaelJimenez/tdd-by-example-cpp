@@ -2,8 +2,8 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C8_1_MONEY_H_
-#define C8_1_MONEY_H_
+#ifndef C8_1_MONEY_HPP_
+#define C8_1_MONEY_HPP_
 
 #include <typeinfo>
 
@@ -19,4 +19,4 @@ class Money {
   unsigned int amount;
 };
 
-#endif  // C8_1_MONEY_H_
+#endif  // C8_1_MONEY_HPP_

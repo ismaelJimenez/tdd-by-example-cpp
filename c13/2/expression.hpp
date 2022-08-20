@@ -2,9 +2,9 @@
 // Copyright 2003 Kent Beck
 // All rights reserved.
 
-#ifndef C13_2_EXPRESSION_H_
-#define C13_2_EXPRESSION_H_
+#ifndef C13_2_EXPRESSION_HPP_
+#define C13_2_EXPRESSION_HPP_
 
 class Expression {};
 
-#endif  // C13_2_EXPRESSION_H_
+#endif  // C13_2_EXPRESSION_HPP_
