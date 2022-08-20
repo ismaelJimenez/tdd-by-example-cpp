@@ -11,7 +11,7 @@ using ::testing::Eq;
 TEST(MultiCurrency, Multiplication) {
   Dollar five{5};
 
-  five *= 2;
+  five.times(2);
 
   ASSERT_THAT(five.amount, Eq(10));
 }

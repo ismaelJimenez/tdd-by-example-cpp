@@ -9,10 +9,7 @@ class Dollar {
  public:
   explicit Dollar(int amount) : amount{amount} {}
 
-  constexpr Dollar& operator*=(int multiplier) {
-    amount *= multiplier;
-    return *this;
-  }
+  void times(int multiplier) { amount *= multiplier; }
 
   int amount;
 };
