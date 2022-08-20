@@ -18,7 +18,7 @@ class Dollar {
   [[nodiscard]] constexpr int amount() const { return amount_; }
 
  private:
-  int amount_;
+  const int amount_;
 };
 
 constexpr bool operator==(const Dollar& lhs, const Dollar& rhs) {
