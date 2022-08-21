@@ -7,15 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - run: bazel test --test_output=all //chapter-1:test
-    - run: bazel test --test_output=all //chapter-2:test
-    - run: bazel test --test_output=all //chapter-3:test
-    - run: bazel test --test_output=all //chapter-4:test
-    - run: bazel test --test_output=all //chapter-5:test
-    - run: bazel test --test_output=all //chapter-6:test
-    - run: bazel test --test_output=all //chapter-7:test
-    - run: bazel test --test_output=all //chapter-8:test
-    - run: bazel test --test_output=all //chapter-9:test
+    - run: bazel test --test_output=all //chapter-01:test
+    - run: bazel test --test_output=all //chapter-02:test
+    - run: bazel test --test_output=all //chapter-03:test
+    - run: bazel test --test_output=all //chapter-04:test
+    - run: bazel test --test_output=all //chapter-05:test
+    - run: bazel test --test_output=all //chapter-06:test
+    - run: bazel test --test_output=all //chapter-07:test
+    - run: bazel test --test_output=all //chapter-08:test
+    - run: bazel test --test_output=all //chapter-09:test
+    - run: bazel test --test_output=all //chapter-10:test
 
   clang-format:
     runs-on: ubuntu-latest
