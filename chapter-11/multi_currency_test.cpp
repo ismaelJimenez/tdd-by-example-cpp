@@ -22,13 +22,6 @@ TEST(MultiCurrency, Equality) {
   ASSERT_FALSE(Money::franc(5) == Money::dollar(5));
 }
 
-TEST(MultiCurrency, FrancMultiplication) {
-  auto five = Money::franc(5);
-
-  ASSERT_THAT(five.times(2), Eq(Money::franc(10)));
-  ASSERT_THAT(five.times(3), Eq(Money::franc(15)));
-}
-
 TEST(MultiCurrency, Currency) {
   ASSERT_THAT(Money::dollar(1).currency(), StrEq("USD"));
   ASSERT_THAT(Money::franc(1).currency(), StrEq("CHF"));
