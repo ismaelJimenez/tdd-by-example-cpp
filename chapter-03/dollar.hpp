@@ -16,7 +16,7 @@ class Dollar {
   int amount;
 };
 
-constexpr bool operator==(const Dollar& lhs, const Dollar& rhs) {
+inline constexpr bool operator==(const Dollar& lhs, const Dollar& rhs) {
   return lhs.amount == rhs.amount;
 }
 

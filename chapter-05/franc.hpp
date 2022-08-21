@@ -21,7 +21,7 @@ class Franc {
   const int amount_;
 };
 
-constexpr bool operator==(const Franc& lhs, const Franc& rhs) {
+inline constexpr bool operator==(const Franc& lhs, const Franc& rhs) {
   return lhs.amount() == rhs.amount();
 }
 

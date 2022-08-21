@@ -36,3 +36,7 @@ TEST(MultiCurrency, Currency) {
   ASSERT_THAT(Money::dollar(1)->currency(), StrEq("USD"));
   ASSERT_THAT(Money::franc(1)->currency(), StrEq("CHF"));
 }
+
+TEST(MultiCurrency, DifferentClassEquality) {
+  ASSERT_TRUE(Money(10, "CHF") == Franc(10, "CHF"));
+}
